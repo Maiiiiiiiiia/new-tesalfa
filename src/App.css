@@ -2,37 +2,117 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container-home {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  height: 50vh;
+
+  background-color: #71bca4;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.image-container img {
+  max-width: 100%;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.text-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.post-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  width: calc(20% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+}
+
+.post-card:hover {
+  position: relative;
+  top: -5px;
+  right: 10px;
+  color: rgb(0, 0, 0);
+
+  background: linear-gradient(45deg, #e6e6e6, #ffffff 40%, #6aab9a 90%);
+  cursor: pointer;
+}
+
+.post-card h3 {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.post-card p {
+  margin: 10px 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.title {
+  padding: 15px;
+}
+
+.favorites {
+  padding: 5px;
+  margin-left: 15px;
+}
+
+.post-details {
+  padding: 15px;
+  margin-left: 15px;
+}
+
+.like-icon {
+  margin-top: 10px;
+  color: black;
+}
+
+.like-icon.liked {
+  color: red;
+}
+
+@media (max-width: 768px) { /* Мобильные устройства */
+  .post-card {
+    width: calc(100% - 20px); /* Контейнеры занимают всю ширину */
+    margin: 10px auto; /* Центрирование контейнеров с одинаковыми отступами */
   }
-  to {
-    transform: rotate(360deg);
+
+  .posts-container {
+    flex-direction: column; /* Вертикальное расположение контейнеров */
+    align-items: center; /* Центрирование контейнеров */
+  }
+
+  .title {
+    font-size: 1.5em; /* Увеличение размера заголовка на мобильных устройствах */
   }
 }
