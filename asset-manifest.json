@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/new-tesalfa/static/css/main.f855e6bc.css",
-    "main.js": "/new-tesalfa/static/js/main.e537ffca.js",
+    "main.css": "/new-tesalfa/static/css/main.f6e9d757.css",
+    "main.js": "/new-tesalfa/static/js/main.14cbfb65.js",
     "static/js/453.610b1e9f.chunk.js": "/new-tesalfa/static/js/453.610b1e9f.chunk.js",
     "index.html": "/new-tesalfa/index.html",
-    "main.f855e6bc.css.map": "/new-tesalfa/static/css/main.f855e6bc.css.map",
-    "main.e537ffca.js.map": "/new-tesalfa/static/js/main.e537ffca.js.map",
+    "main.f6e9d757.css.map": "/new-tesalfa/static/css/main.f6e9d757.css.map",
+    "main.14cbfb65.js.map": "/new-tesalfa/static/js/main.14cbfb65.js.map",
     "453.610b1e9f.chunk.js.map": "/new-tesalfa/static/js/453.610b1e9f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.e537ffca.js"
+    "static/css/main.f6e9d757.css",
+    "static/js/main.14cbfb65.js"
   ]
 }
