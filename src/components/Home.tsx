@@ -10,9 +10,9 @@ const Home: React.FC = () => {
       </h2>
       <h3>На позицию стажера</h3>
       <div>
-        <Link className='post-card' to="/posts">Go to Posts</Link>
+        <Link className='go-topost' to="/posts">Go to Posts</Link>
       </div>
-      <h3>Данные из публичного API:</h3>
+      <h4>Данные из публичного API:</h4>
       <div>
         <a href="https://jsonplaceholder.typicode.com/posts" target="_blank">https://jsonplaceholder.typicode.com/posts</a>
       </div>

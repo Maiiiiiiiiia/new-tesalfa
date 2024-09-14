@@ -5,16 +5,19 @@
 .container-home {
   display: flex;
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
   margin: 20px;
-  height: 50vh;
+  /* height: 50vh; */
 
   background-color: #71bca4;
   border-radius: 10px;
+  border: 10px #ddd;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+
+  border: 5px solid white;
 }
 
 .image-container {
@@ -22,6 +25,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-color: antiquewhite;
 }
 
 .image-container img {
@@ -32,6 +37,7 @@
 .text-container {
   flex: 1;
   padding: 20px;
+  margin: 20px;
 }
 
 .posts-container {
@@ -40,6 +46,29 @@
   justify-content: space-between;
   margin: 10px;
 }
+
+.go-topost {
+  background-color: #edeee8;
+  border-radius: 30px;
+  padding: 10px;
+  margin-top: 10px;
+  width: calc(20% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+}
+
+.go-topost:hover {
+  position: relative;
+  top: -5px;
+  right: 10px;
+  color: rgb(0, 0, 0);
+
+  background: linear-gradient(45deg, #e6e6e6, #ffffff 40%, #6aab9a 90%);
+  cursor: pointer;
+}
+
 
 .post-card {
   background-color: #f9f9f9;
@@ -101,18 +130,19 @@
   color: red;
 }
 
-@media (max-width: 768px) { /* Мобильные устройства */
+
+@media (max-width: 768px) {
   .post-card {
-    width: calc(100% - 20px); /* Контейнеры занимают всю ширину */
-    margin: 10px auto; /* Центрирование контейнеров с одинаковыми отступами */
+    width: calc(90% - 20px);
+    margin: 10px auto;
   }
 
   .posts-container {
-    flex-direction: column; /* Вертикальное расположение контейнеров */
-    align-items: center; /* Центрирование контейнеров */
+    flex-direction: column;
+    align-items: center;
   }
 
   .title {
-    font-size: 1.5em; /* Увеличение размера заголовка на мобильных устройствах */
+    font-size: 1.5em;
   }
 }
